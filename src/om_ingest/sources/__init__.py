@@ -11,6 +11,7 @@ from om_ingest.sources.registry import SourceRegistry
 
 # Import all connectors to trigger their @SourceRegistry.register() decorators
 # This is CRITICAL - without these imports, the decorators never execute
+from om_ingest.sources.mlflow import MLflowConnector
 from om_ingest.sources.s3_hudi import S3HudiConnector
 
 __all__ = [
@@ -18,4 +19,5 @@ __all__ = [
     "DataSourceError",
     "SourceRegistry",
     "S3HudiConnector",
+    "MLflowConnector",
 ]

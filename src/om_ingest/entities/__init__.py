@@ -16,6 +16,10 @@ from om_ingest.entities.database import (
     DatabaseServiceHandler,
     TableHandler,
 )
+from om_ingest.entities.ml import (
+    MLModelHandler,
+    MLModelServiceHandler,
+)
 
 __all__ = [
     "EntityRegistry",
@@ -23,4 +27,6 @@ __all__ = [
     "DatabaseHandler",
     "DatabaseSchemaHandler",
     "TableHandler",
+    "MLModelServiceHandler",
+    "MLModelHandler",
 ]
